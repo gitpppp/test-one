@@ -32,7 +32,7 @@ public class IDCardRecognitionDemo {
 	    HashMap<String, String> options = new HashMap<String, String>();
 	    options.put("detect_direction", "true");
 	    options.put("detect_risk", "false");
-	    // 识别身份证正面（正面图片为本地图片，即D:\1.png）.
+	    // 识别身份证正面（正面图片为本地图片，即D:\1.png）..
 	    JSONObject frontres = client.idcard("D:\\1.png", "front", options);
 	    System.out.println(frontres.toString(2));
 	    // 识别身份证反面（反面图片为本地图片，即D:\2.png）
